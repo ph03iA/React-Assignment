@@ -127,7 +127,7 @@ export const CourseViewer = () => {
   }, [course, topicId, subtopicId]);
 
   if (!course) return (
-    <div className="flex h-screen items-center justify-center text-zinc-500 bg-[#020204]">
+    <div className="flex h-screen items-center justify-center text-zinc-500 bg-black">
       <Loader2 className="animate-spin text-zinc-400" size={24} />
     </div>
   );
@@ -136,7 +136,18 @@ export const CourseViewer = () => {
   const currentSubtopic = currentTopic?.subtopics.find(s => s.id === subtopicId);
 
   return (
-    <div className="flex min-h-screen bg-[#020204]">
+    <div className="flex min-h-screen bg-black relative">
+      {/* Vercel Grid */}
+      <div
+        className="absolute inset-0 opacity-30 pointer-events-none"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)
+          `,
+          backgroundSize: "60px 60px",
+        }}
+      />
       <Sidebar 
         course={course}
         selectedTopicId={topicId}
@@ -182,9 +193,6 @@ export const CourseViewer = () => {
         </div>
 
         <div className="p-6 md:p-24 overflow-y-auto min-h-[calc(100vh-60px)] relative">
-          {/* Ambient Glow */}
-          <div className="fixed top-20 right-0 w-[300px] md:w-[800px] h-[300px] md:h-[600px] bg-indigo-900/5 rounded-full blur-[100px] md:blur-[150px] pointer-events-none z-0" />
-
           {currentSubtopic ? (
             <div className="max-w-3xl mx-auto relative z-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
               

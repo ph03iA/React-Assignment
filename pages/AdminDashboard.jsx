@@ -11,12 +11,18 @@ export const AdminDashboard = () => {
   );
 
   return (
-    <div className="relative min-h-screen pb-20">
-      {/* Background Ambience */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute top-[20%] right-[20%] w-[50vw] h-[50vw] bg-purple-900/10 rounded-full blur-[120px] mix-blend-screen animate-blob" />
-        <div className="absolute bottom-[10%] left-[10%] w-[40vw] h-[40vw] bg-emerald-900/10 rounded-full blur-[120px] mix-blend-screen animate-blob animation-delay-4000" />
-      </div>
+    <div className="min-h-screen w-full bg-black relative pb-20">
+      {/* Vercel Grid */}
+      <div
+        className="absolute inset-0 opacity-30"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)
+          `,
+          backgroundSize: "60px 60px",
+        }}
+      />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-12 md:py-20">
         

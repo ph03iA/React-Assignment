@@ -33,12 +33,18 @@ export const CreateCourse = () => {
   };
 
   return (
-    <div className="relative min-h-screen pb-20">
-      {/* Background Ambience */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute top-[5%] left-[10%] w-[60vw] h-[60vw] bg-indigo-900/10 rounded-full blur-[120px] mix-blend-screen animate-blob" />
-        <div className="absolute bottom-[5%] right-[10%] w-[50vw] h-[50vw] bg-fuchsia-900/10 rounded-full blur-[120px] mix-blend-screen animate-blob animation-delay-2000" />
-      </div>
+    <div className="min-h-screen w-full bg-black relative pb-20">
+      {/* Vercel Grid */}
+      <div
+        className="absolute inset-0 opacity-30"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)
+          `,
+          backgroundSize: "60px 60px",
+        }}
+      />
 
       <div className="relative z-10 max-w-2xl mx-auto px-6 pt-12 pb-20">
         

@@ -26,13 +26,18 @@ export const CourseList = () => {
   };
 
   return (
-    <div className="relative min-h-screen">
-      {/* Dynamic Background */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute -top-[20%] -left-[10%] w-[70vw] h-[70vw] bg-indigo-900/10 rounded-full blur-[120px] mix-blend-screen animate-blob" />
-        <div className="absolute top-[10%] -right-[10%] w-[60vw] h-[60vw] bg-blue-900/10 rounded-full blur-[120px] mix-blend-screen animate-blob animation-delay-2000" />
-        <div className="absolute -bottom-[20%] left-[20%] w-[60vw] h-[60vw] bg-purple-900/10 rounded-full blur-[120px] mix-blend-screen animate-blob animation-delay-4000" />
-      </div>
+    <div className="min-h-screen w-full bg-black relative">
+      {/* Vercel Grid */}
+      <div
+        className="absolute inset-0 opacity-30"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)
+          `,
+          backgroundSize: "60px 60px",
+        }}
+      />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 pt-24 pb-20">
         

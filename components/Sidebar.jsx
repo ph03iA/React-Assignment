@@ -52,14 +52,14 @@ export const Sidebar = ({
 
       {/* Sidebar Container */}
       <aside 
-        className={`fixed top-0 left-0 z-50 h-[100vh] w-[85vw] max-w-[320px] md:w-[360px] bg-[#050507] border-r border-white/[0.03] flex flex-col transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 z-50 h-[100vh] w-[85vw] max-w-[320px] md:w-[360px] bg-black/95 border-r border-white/[0.05] flex flex-col transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
         }`}
         aria-label="Course Navigation"
       >
         
         {/* Header Area */}
-        <div className="p-6 pt-8 pb-4 bg-[#050507] z-10 shrink-0">
+        <div className="p-6 pt-8 pb-4 bg-black/95 z-10 shrink-0">
           <div className="flex items-center justify-between mb-6">
             <button 
               onClick={onBack}
