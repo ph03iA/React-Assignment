@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "name": "Aditi Sharma",
+    "email": "aditi.sharma@example.com",
+    "role": "STUDENT",
+    "enrolledCourses": ["full-stack-bootcamp", "ml-fundamentals-python"],
+    "courseProgress": {
+      "full-stack-bootcamp": 0.6,
+      "ml-fundamentals-python": 0.3
+    }
+  },
+  {
+    "id": 2,
+    "name": "Rahul Mehta",
+    "email": "rahul.mehta@example.com",
+    "role": "INSTRUCTOR",
+    "authoredCourses": ["full-stack-bootcamp"]
+  },
+  {
+    "id": 3,
+    "name": "Priya Nair",
+    "email": "priya.nair@example.com",
+    "role": "STUDENT",
+    "enrolledCourses": ["dsa-java"],
+    "courseProgress": {
+      "dsa-java": 0.8
+    }
+  },
+  {
+    "id": 4,
+    "name": "Ankit Verma",
+    "email": "ankit.verma@example.com",
+    "role": "INSTRUCTOR",
+    "authoredCourses": ["dsa-java"]
+  },
+  {
+    "id": 5,
+    "name": "Sara D'Souza",
+    "email": "sara.dsouza@example.com",
+    "role": "STUDENT",
+    "enrolledCourses": ["ml-fundamentals-python"],
+    "courseProgress": {
+      "ml-fundamentals-python": 0.1
+    }
+  },
+  {
+    "id": 6,
+    "name": "David Lee",
+    "email": "david.lee@example.com",
+    "role": "INSTRUCTOR",
+    "authoredCourses": ["ml-fundamentals-python"]
+  },
+  {
+    "id": 7,
+    "name": "Isha Kumar",
+    "email": "isha.kumar@example.com",
+    "role": "STUDENT",
+    "enrolledCourses": ["full-stack-bootcamp", "dsa-java"],
+    "courseProgress": {
+      "full-stack-bootcamp": 0.4,
+      "dsa-java": 0.2
+    }
+  },
+  {
+    "id": 8,
+    "name": "Ravi Patel",
+    "email": "ravi.patel@example.com",
+    "role": "STUDENT",
+    "enrolledCourses": [],
+    "courseProgress": {}
+  }
+]
