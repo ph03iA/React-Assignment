@@ -11,7 +11,6 @@ Lumina Learning is a distraction-free environment for technical education. It re
 - Read lessons with clean Markdown rendering
 - Track progress (saved in browser)
 - Works on mobile and desktop
-- Accessible with keyboard navigation
 
 ## Architecture Summary
 
